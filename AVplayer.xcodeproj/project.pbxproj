@@ -19,6 +19,11 @@
 		184221F619035FCE00DD2293 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184221DE19035FCE00DD2293 /* UIKit.framework */; };
 		184221FE19035FCE00DD2293 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 184221FC19035FCE00DD2293 /* InfoPlist.strings */; };
 		1842220019035FCE00DD2293 /* AVplayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184221FF19035FCE00DD2293 /* AVplayerTests.m */; };
+		1842220A1903600A00DD2293 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184222091903600A00DD2293 /* AVFoundation.framework */; };
+		1842220C1903603300DD2293 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1842220B1903603300DD2293 /* CoreMedia.framework */; };
+		1842220F1903612A00DD2293 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842220E1903612A00DD2293 /* RootViewController.m */; };
+		184222121903618000DD2293 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184222111903618000DD2293 /* VideoView.m */; };
+		1842221419036E0100DD2293 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1842221319036E0100DD2293 /* 1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		184221FB19035FCE00DD2293 /* AVplayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVplayerTests-Info.plist"; sourceTree = "<group>"; };
 		184221FD19035FCE00DD2293 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		184221FF19035FCE00DD2293 /* AVplayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVplayerTests.m; sourceTree = "<group>"; };
+		184222091903600A00DD2293 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1842220B1903603300DD2293 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1842220D1903612A00DD2293 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1842220E1903612A00DD2293 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		184222101903618000DD2293 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		184222111903618000DD2293 /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
+		1842221319036E0100DD2293 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1842220C1903603300DD2293 /* CoreMedia.framework in Frameworks */,
+				1842220A1903600A00DD2293 /* AVFoundation.framework in Frameworks */,
 				184221DD19035FCE00DD2293 /* CoreGraphics.framework in Frameworks */,
 				184221DF19035FCE00DD2293 /* UIKit.framework in Frameworks */,
 				184221DB19035FCE00DD2293 /* Foundation.framework in Frameworks */,
@@ -77,6 +91,7 @@
 		184221CE19035FCE00DD2293 = {
 			isa = PBXGroup;
 			children = (
+				1842221319036E0100DD2293 /* 1.mp4 */,
 				184221E019035FCE00DD2293 /* AVplayer */,
 				184221F919035FCE00DD2293 /* AVplayerTests */,
 				184221D919035FCE00DD2293 /* Frameworks */,
@@ -96,6 +111,8 @@
 		184221D919035FCE00DD2293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1842220B1903603300DD2293 /* CoreMedia.framework */,
+				184222091903600A00DD2293 /* AVFoundation.framework */,
 				184221DA19035FCE00DD2293 /* Foundation.framework */,
 				184221DC19035FCE00DD2293 /* CoreGraphics.framework */,
 				184221DE19035FCE00DD2293 /* UIKit.framework */,
@@ -109,6 +126,10 @@
 			children = (
 				184221E919035FCE00DD2293 /* AppDelegate.h */,
 				184221EA19035FCE00DD2293 /* AppDelegate.m */,
+				1842220D1903612A00DD2293 /* RootViewController.h */,
+				1842220E1903612A00DD2293 /* RootViewController.m */,
+				184222101903618000DD2293 /* VideoView.h */,
+				184222111903618000DD2293 /* VideoView.m */,
 				184221EC19035FCE00DD2293 /* Images.xcassets */,
 				184221E119035FCE00DD2293 /* Supporting Files */,
 			);
@@ -219,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1842221419036E0100DD2293 /* 1.mp4 in Resources */,
 				184221E519035FCE00DD2293 /* InfoPlist.strings in Resources */,
 				184221ED19035FCE00DD2293 /* Images.xcassets in Resources */,
 			);
@@ -239,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184222121903618000DD2293 /* VideoView.m in Sources */,
 				184221EB19035FCE00DD2293 /* AppDelegate.m in Sources */,
 				184221E719035FCE00DD2293 /* main.m in Sources */,
+				1842220F1903612A00DD2293 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,11 +381,13 @@
 		1842220419035FCE00DD2293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AVplayer/AVplayer-Prefix.pch";
 				INFOPLIST_FILE = "AVplayer/AVplayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,11 +396,13 @@
 		1842220519035FCE00DD2293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AVplayer/AVplayer-Prefix.pch";
 				INFOPLIST_FILE = "AVplayer/AVplayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
